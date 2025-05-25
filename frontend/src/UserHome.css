@@ -1,0 +1,68 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 12px 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-left {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.user-info {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+}
+
+.user-name {
+  margin-right: 6px;
+}
+
+.user-role {
+  font-size: 14px;
+  color: #666;
+}
+
+.logout-icon-button {
+  all: unset; /* ✅ annule tous les styles hérités */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+.logout-icon {
+  height: 22px;
+  width: 22px;
+  filter: invert(30%);
+  transition: all 0.2s ease;
+}
+
+.logout-icon-button:hover {
+  background-color: transparent; /* ✅ supprime le fond vert */
+}
+
+.logout-icon-button:hover .logout-icon {
+  filter: invert(18%) sepia(76%) saturate(4257%) hue-rotate(356deg) brightness(96%) contrast(105%);
+  /* effet rouge */
+  transform: scale(1.1);
+}

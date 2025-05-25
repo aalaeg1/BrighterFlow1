@@ -1,0 +1,65 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo-left {
+  height: 2000px;
+}
+
+.logo-right {
+  height: 90px;
+}
+
+.admin-content {
+  flex-grow: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+.admin-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.admin-footer img {
+  height: 28px;
+  cursor: pointer;
+}
+
+.logout-icon-button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+.logout-icon {
+  height: 22px;
+  width: 22px;
+  filter: invert(30%);
+  transition: all 0.2s ease;
+}
+
+.logout-icon-button:hover {
+  background-color: transparent;
+}
+
+.logout-icon-button:hover .logout-icon {
+  filter: invert(18%) sepia(76%) saturate(4257%) hue-rotate(356deg) brightness(96%) contrast(105%);
+  transform: scale(1.1);
+}
